@@ -18,8 +18,8 @@ module.exports = function towelSort (matrix) {
         } 
   
         if (i % 2 > 0) {
+            matrix[i].reverse();
             for ( let j = 0; j < matrix[i].length; j++) {
-                matrix[i].reverse();
                 result.push(matrix[i][j]);   
             }            
         }
